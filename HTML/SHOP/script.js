@@ -35,7 +35,7 @@ console.log(obj.price * obj.qty)*/
                 total += cart[i].price * cart[i].qty
             }
 
-            console.log(`Total in cart: ${tota}`)
+            console.log(`Total in cart: ${total}`)
         }
 
         addItem('Apple', 0.99)

@@ -1,0 +1,26 @@
+@import '../SASS/variables';
+
+main{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    
+   
+    .card{
+        margin-top: 2%;
+        display: inline-block; 
+        width: 20%;
+        color: $primary;
+        .btn{
+            color: $primary;
+            background: $third;
+            border-color: $primary;
+            &:hover{
+            color: $secondary;    
+            }
+        }
+       
+      
+    }
+}

@@ -16,7 +16,9 @@
             <div class="card-body">
             <h5 class="card-title">WARM TOBACCO PIPE</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            <button href="#" class="btn btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -24,7 +26,11 @@
             <div class="card-body">
             <h5 class="card-title">APPLE HONEY BUTTER</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            
+            <button href="#" class="btn btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
+           
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -32,7 +38,9 @@
             <div class="card-body">
             <h5 class="card-title">LAVENDER CHAMOMILE</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            <button href="#" class="btn btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -40,7 +48,9 @@
             <div class="card-body">
             <h5 class="card-title">TRANQUIL LOTUS</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            <button href="#" class="btn btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -48,7 +58,9 @@
             <div class="card-body">
             <h5 class="card-title">MIDNIGHT ORCHID</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            <button href="#" class="btn cd-add-to-cart js-cd-add-to-cart btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -56,7 +68,9 @@
             <div class="card-body">
             <h5 class="card-title">STORMY NIGHT</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            <button href="#" class="btn cd-add-to-cart js-cd-add-to-cart btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -64,7 +78,9 @@
             <div class="card-body">
             <h5 class="card-title">FRESH BREW</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn">ADD TO CART</a>
+            <button href="#" class="btn cd-add-to-cart js-cd-add-to-cart btn-primary">ADD TO CART</button>
+            <button href="#" class="btn btn-primary">-</button>
+            <button href="#" class="btn btn-primary">+</button>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
@@ -72,11 +88,111 @@
             <div class="card-body">
             <h5 class="card-title">APPLE COCONUT</h5>
             <p class="card-text">3.990 kr</p>
-            <a href="#" class="btn btn-primary">ADD TO CART</a>
+            <button href="#" class="btn cd-add-to-cart js-cd-add-to-cart btn-primary">ADD TO CART</button>
+            <button href="#" class="btn d-none btn-primary">-</button>
+            <button href="#" class="btn d-none btn-primary">+</button>
             </div>
         </div>
     </main>
-    <script src='../SHOP/script.js' type="module">
+    <div class="cd-cart js-cd-cart cd-cart--open">
+   
+    <a href="#0" class="cd-cart__trigger text-replace">
+       
+        
+        <ul class="cd-cart__count">
+            <!-- cart items count-->
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        <!-- .cd-cart__count -->
+       
+    </a>
+    </div>
+    <div class="cd-cart__content">
+        <div class="cd-cart__layout">
+            <header class="cd-cart__header">
+                <h2>CART</h2>
+                <span class="cd-cart__undo">
+                    "Item removed."
+                    <a href="#0">UNDO</a>
+                </span>
+            </header>
+            <div class="cd-cart__body">
+                <ul>
+                    <!-- products added to the cart will be inserted here using JavaScript-->
+                    <li class="cd-cart__product">
+                        <div class="cd-cart__image">
+                            <a href="#0">
+                                <img src="assets/img/product-preview" alt="placeholder">
+                            </a>
+                        </div>
+                        <div class="cd-cart__details">
+                            <h3 class="truncate">
+                                <a href="#0" >Product Name</a>
+                            </h3>
+                            <span class="cd-cart__price">$25.99
+                            <div class="cd-cart__actions">
+                                <a href="#0" class="cd-cart__delete-item">Delete</a>
+                                <div class="cd-cart__quantity">
+                                    <label for="cd-product-1">Qty</label>
+                                    <span class="cd-cart__select">
+                                        <select name="quantity" class="reset" id="cd-product-1">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <svg class="icon" viewBox="0 0 12 12">
+                                            <polyline fill="none" stroke="currentColor" points="s,4 6,8 10,4"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <footer class="cd-cart__footer">
+                <a href="#0" class="cd-cart__checkout">
+                    <em>
+                        "checkout - $"
+                        <span>25.99</span>
+                        <svg class="icon icon--sm" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor">
+                                <line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"></line>
+                                <polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18"></polyline>
+                            </g>
+                        </svg>
+                    </em>
+                </a>
+            </footer>
+        </div>
+    </div>
+    <!-- .cd-cart__content-->
+    <!--<footer>
+        <div id="cart-qty">
+           Cart qty here
+        </div>
+        
+        <ul id="item-list"> 
+         
+    
+        </ul>
+    
+        <div id="cart-total">
+            
+        </div>
+    </footer>-->
+    <script src="../SHOP/util.js"></script>
+    
+    <script src='../SHOP/cart.js' type="module">
         
     </script>
 </body>

@@ -646,3 +646,14 @@ body {
     background-color: lightness(var(--cd-color-4), 0.95);
   }
 }
+
+.cd-article-link {
+    color: var(--cd-color-1);
+    background-color: lightness(var(--cd-color-4), 0.9);
+  
+    &:hover {
+      background-color: lightness(var(--cd-color-4), 0.95);
+    }
+  }
+
+

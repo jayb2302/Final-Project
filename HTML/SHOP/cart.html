@@ -1,28 +1,149 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-</head>
-<body>
-    <div id="cart-qty">
-        <!--Cart qty here-->
-    </div>
-    
-    <ul id="item-list"> 
-        <!-- Cart Items -->
-
-    </ul>
-
-    <div id="cart-total">
-        <!-- Cart total-->
-    </div>
-
-    <script src='../SHOP/script.js' type="module">
-
-    </script>
-</body>
-
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="../SHOP/cart.css">
+        <script src="cart.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="brand-name brand-name-large">Blómabúðin Dögg</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">CANDLES</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">WARM TOBACCO PIPE</span>
+                    <img class="shop-item-image" src="../IMG/Candle/Kerti/ca1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$22.21</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">APPLE HONEY BUTTER</span>
+                    <img class="shop-item-image" src="../IMG/Candle/Kerti/ca2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$22.21</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LAVENDER CHAMOMILE</span>
+                    <img class="shop-item-image" src="../IMG/Candle/Kerti/ca3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$22.21</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">TRANQUIL LOTUS</span>
+                    <img class="shop-item-image" src="../IMG/Candle/Kerti/ca4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$22.21</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">FRESH BREW</span>
+                    <img class="shop-item-image" src="../IMG/Candle/Kerti/ca7.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$26.80/span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">APPLE COCONUT</span>
+                    <img class="shop-item-image" src="../IMG/Candle/Kerti/ca8.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$26.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">VASES</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Clear Glass Vase</span>
+                    <img class="shop-item-image" src="../IMG/Vase/Va1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$13.13</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Taupe Vase</span>
+                    <img class="shop-item-image" src="../IMG/Vase/Va2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$26.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../IMG/Candle/Kerti/ca3.png" width="100" height="100">
+                        <span class="cart-item-title"> LAVENDER CHAMOMILE </span>
+                    </div>
+                    <span class="cart-price cart-column">$22,12</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$22,12</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="brand-name">Blómabúðin Dögg</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
+
+

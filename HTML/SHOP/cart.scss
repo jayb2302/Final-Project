@@ -21,13 +21,16 @@ nav{
     margin: 0;
         li {
         display: inline;
+        
             a {
             display: inline-block;
             padding: .5em;
             color: $primary;
             text-decoration: none;
+            font-family: 'alex brush';
+            font-size: 30px;
             &:hover {
-                background-color: rgba(255, 255, 255, .3)
+                color: $third;
             }
             }
         }
@@ -118,11 +121,15 @@ nav{
 
 .footer-nav li {
     padding: 0 .5em;
+    list-style: none;
+
 }
 
 .footer-nav img {
     width: 30px;
     height: 30px;
+    -webkit-filter: invert(.75); 
+    filter: invert(.75);
 }
 
 .btn {
@@ -207,6 +214,7 @@ nav{
 
 .shop-item {
     margin: 30px;
+
 }
 
 .shop-item-title {
@@ -217,6 +225,7 @@ nav{
     font-size: 1.5em;
     color: $primary;
     margin-bottom: 15px;
+    padding-top: 2%;
 }
 
 .shop-item-image {

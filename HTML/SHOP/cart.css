@@ -21,9 +21,11 @@ nav ul li a {
   padding: 0.5em;
   color: #707070;
   text-decoration: none;
+  font-family: "alex brush";
+  font-size: 30px;
 }
 nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  color: #CDBDB2;
 }
 
 .main-nav {
@@ -105,11 +107,13 @@ nav ul li a:hover {
 
 .footer-nav li {
   padding: 0 0.5em;
+  list-style: none;
 }
 
 .footer-nav img {
   width: 30px;
   height: 30px;
+  filter: invert(0.75);
 }
 
 .btn {
@@ -204,6 +208,7 @@ nav ul li a:hover {
   font-size: 1.5em;
   color: #707070;
   margin-bottom: 15px;
+  padding-top: 2%;
 }
 
 .shop-item-image {

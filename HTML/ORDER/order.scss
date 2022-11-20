@@ -65,6 +65,7 @@ li{
 
 .form .button, .form .message, .customSelect, .form .select, .form .textarea, .form .text-input, .form .option-input + label, .form .checkbox-input + label, .form .label {
   padding: 0.75em 1em;
+  font-family: roboto condense;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -74,9 +75,11 @@ li{
   border: none;
   background: none;
   display: block;
+  letter-spacing: 3px;
 }
 
 .form .label {
+    font-family: roboto condense;
   font-weight: bold;
   color: $primary;
   padding-top: 0;
@@ -86,6 +89,7 @@ li{
   line-height: 1.25;
   position: relative;
   z-index: 100;
+  letter-spacing: 2px;
 }
 .required .form .label:after, .form .required .label:after {
   content: " *";
@@ -103,6 +107,7 @@ li{
   background: $primary;
   color: $secondary;
   position: relative;
+  letter-spacing: 1px;
 }
 .customSelect:placeholder, .form .select:placeholder, .form .textarea:placeholder, .form .text-input:placeholder, .form .option-input + label:placeholder, .form .checkbox-input + label:placeholder {
   color:$secondary;

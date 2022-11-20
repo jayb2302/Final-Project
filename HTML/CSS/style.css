@@ -56,6 +56,7 @@ nav li a:hover{
     display: flex;  
     margin-left: 0% ; 
     margin-right: 0px ;
+    margin-top: 2%;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -201,6 +202,7 @@ nav li:hover .menu-sub{
     display: block;
     width: 100%;
     flex-grow: 1;
+  
 }
 
 .section2 .container {
@@ -208,19 +210,16 @@ nav li:hover .menu-sub{
     display: flex;
     margin-top: 10%;
     width: 90%;
-    
+    height: auto;
+    margin-bottom: -10%;
     margin-left: 5%;
     margin-right: 5%;
     flex-direction: row;
-    
+    text-decoration: none;
     
     
 
 }
-
-
-
-
 
 
 .img1{
@@ -242,7 +241,7 @@ nav li:hover .menu-sub{
     position: absolute;
     margin-top: -2.2%;
     margin-left: 0%;
-    height: 390px;
+    height: 425px;
     width: 20%;
     
 }
@@ -267,7 +266,7 @@ nav li:hover .menu-sub{
     
 
 }
-.section2 .container .imgbox1 .imghover{
+.section2 .container .imgbox1 .imghover a{
     color:transparent;
     background: 
       linear-gradient(90deg,#9E9F8C 50%,#606060 0%) 
@@ -278,9 +277,15 @@ nav li:hover .menu-sub{
     transition: .4s;
     
   }
-.section2 .container .imgbox1 .imghover:hover {
+.imghover a{
+  text-decoration: none;
+  color: none;
+}
+
+.section2 .container .imgbox1 .imghover a:hover {
     --_p:0%
 }
+
 
 .imgbox2{
     margin-left: 0%;
@@ -290,18 +295,18 @@ nav li:hover .menu-sub{
     margin-bottom: 20%;
 }
 
-.section2 .container .imgbox2 .imghover{
+.section2 .container .imgbox2 .imghover a{
     color:transparent;
     background: 
       linear-gradient(90deg,#9E9F8C 50%,#606060 0%) 
       var(--_p,100%)/200% no-repeat; 
       background-clip: text;
     -webkit-background-clip: text;
-           
+    text-decoration: none;
     transition: .4s;
     
   }
-.section2 .container .imgbox2 .imghover:hover {
+.section2 .container .imgbox2 .imghover a:hover {
     --_p:0%
 }
 
@@ -314,7 +319,7 @@ nav li:hover .menu-sub{
     
 }
 
-.section2 .container .imgbox3 .imghover{
+.section2 .container .imgbox3 .imghover a{
     color:transparent;
     background: 
       linear-gradient(90deg,#9E9F8C 50%,#606060 0%) 
@@ -325,7 +330,7 @@ nav li:hover .menu-sub{
     transition: .4s;
     
   }
-.section2 .container .imgbox3 .imghover:hover {
+.section2 .container .imgbox3 .imghover a:hover {
     --_p:0%
 }
 
@@ -395,94 +400,58 @@ nav li:hover .menu-sub{
 
 }
 
-.container2{
+.herotext {
     display: flex;
     position: relative;
     width: 100%;
-    height: 300px;
-    
- 
-    
+    height: 400px;
 }
 
-
-
-.herotext{
-    width: 100%;
-    display: flex;
-    position:relative;
-    margin-left: 20%;
-    margin-right: -13%;
-   
-    
-}
-.herotext1{
-    width:100%;
-    display: flex;
-    position: relative;
-    margin-left: -10%;
-    
-    
-    
-}
-.herotext2{
-    width: 100%;
-    display: flex;
-    position: relative;
+.herotext h1{
+    font-family: roboto Condensed;
     color: #F2F2F2;
-    margin-right: 0%;
-    margin-left: -5%;
-
-    
+    font-size:90px;
+    margin-left: 20%;
+    width: 33%;
+    filter: drop-shadow(4px 4px 2.5px rgba(0, 0, 0, 0.5));
+    letter-spacing: 4px;
+    margin-top: -5%;
     
 }
-
-.container2 .let{
-   font-size:90px;
-   font-family: 'Roboto Condensed';
-   letter-spacing: 4px; 
-   width: 100%;
-   margin: -12% 0% -40% 0%;
-   color: #F2F2F2;
-   filter: drop-shadow(4px 4px 2.5px rgba(0, 0, 0, 0.5));
-
-   
-   
-}
-
-.container2 .dec {
+.herotext p{
+    font-family: roboto Condensed;
+    color: #606060;
+    font-size:90px;
     font-size: 190px;
     font-family: 'Alex Brush';
-    color: #707070;
-    width: 100%;
-    transform: rotate(-25deg);
-    margin: -10% 0% 0% 1%;
-    letter-spacing: 2px;
+    margin: 0;
+    margin-left: -20%;
+    margin-top: -5%;
     filter: drop-shadow(-8px 5px 2px rgba(122, 122, 122, 0.5));
-
-  
- }
-
-.container2 .you{
+    transform: rotate(-25deg);
+    width: 33%;
+    letter-spacing: 4px;
+    
+}
+.herotext h6{
+    font-family: roboto Condensed;
+    color: #F2F2F2;
+    width: 33%;
     font-size:60px;
     font-family: 'Roboto Condensed';
-    margin: 16% 0% 0% -40%;
+    margin-top: 3%;
+    margin-left: -12%;
+    color: #F2F2F2;
     letter-spacing: 4px;
-    width: 100%;
-    filter: drop-shadow(4px 4px 1.5px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(4px 4px 1.5px rgba(0, 0, 0, 0.5));
     
- }
-
- @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
-* {
-  font-family: Roboto;
 }
 
 .footer-distributed {
-  background: #707070;
+  background: #f2F2f2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
+  border-top: #606060 solid 1px ;
   width: 100%;
   font: bold 16px sans-serif;
   text-align: left;
@@ -493,7 +462,7 @@ nav li:hover .menu-sub{
 section {
   width: 100%;
   display: inline-block;
-  background: #ccc;
+  background: #f2f2f2;
   height: 60vh;
   text-align: center;
   font-size: 22px;
@@ -510,54 +479,55 @@ section {
 /* The company logo */
 
 .footer-distributed h3 {
-  color: #F2F2F2;
-  font-family: alex brush;
-  font-size: 40px;
+  color: #606060;
+  font-family: Alex brush ;
+  font-size: 60px;
+  margin-bottom: 2%;
+  font-weight: 1px;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links {
-  color: #f2f2f2;
+  color: #606060;
   margin: 0 0 10px;
   padding: 0;
+  font-family: roboto condensed;
+  
 }
+
+
+
+
 
 .footer-distributed .footer-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-bottom: 3%;
 }
 
-.footer-distributed .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
 
 /* Footer social icons */
 
-.footer-distributed .footer-icons {
-  margin-top: 40px;
+.footer-distributed li {
+  
+display: inline-block;
+-webkit-filter: invert(.75); 
+filter: invert(.75);
+
+
 }
-
-.footer-distributed .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
+.footer-distributed li img{
+  
+    display: inline-block;
+   
+    margin-right:10%;
+    height: 30px;
+    width: 30px;
 }
 
 /* Footer Right */
@@ -569,8 +539,10 @@ section {
 .footer-distributed .footer-right p {
   display: inline-block;
   vertical-align: top;
-  margin: 15px 42px 0 0;
-  color: #f2f2f2;
+  margin: -1% 42px 3px 4px;
+  color: #606060;
+  font-family: roboto condensed;
+  font-size: 25px;
 }
 
 /* The contact form */
@@ -584,8 +556,8 @@ section {
   display: block;
   border-radius: 3px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  background-color: #CDBDB2;
+  box-shadow: 1px #606060;
   border: none;
   resize: none;
 
@@ -599,11 +571,11 @@ section {
 }
 
 .footer-distributed ::-webkit-input-placeholder {
-  color: #5c666b;
+  color: #606060;
 }
 
 .footer-distributed ::-moz-placeholder {
-  color: #5c666b;
+  color: #606060;
   opacity: 1;
 }
 
@@ -614,33 +586,34 @@ section {
 .footer-distributed form input {
   height: 55px;
   margin-bottom: 15px;
+  letter-spacing: 3px;
 }
 
 .footer-distributed form textarea {
   height: 100px;
   margin-bottom: 20px;
+  letter-spacing: 3px;
 }
 
 .footer-distributed form button {
   border-radius: 3px;
-  background-color: #;
-  color: #f2F2f2;
+  background-color: #CDBDB2;
+  color: #606060;
   border: 0;
   padding: 15px 50px;
   font-weight: bold;
   float: right;
+  font-family: roboto condensed;
+  letter-spacing: 3px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 1000px) {
   .footer-distributed {
     font: bold 14px sans-serif;
   }
 
-  .footer-distributed .footer-company-name {
-    font-size: 12px;
-  }
+ 
 
   .footer-distributed form input,
   .footer-distributed form textarea {
